@@ -1,31 +1,153 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dzshka", "dzshka.vcxproj", "{5F454CA7-65C0-4237-A565-6FEECEF55F74}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5F454CA7-65C0-4237-A565-6FEECEF55F74}.Debug|x64.ActiveCfg = Debug|x64
-		{5F454CA7-65C0-4237-A565-6FEECEF55F74}.Debug|x64.Build.0 = Debug|x64
-		{5F454CA7-65C0-4237-A565-6FEECEF55F74}.Debug|x86.ActiveCfg = Debug|Win32
-		{5F454CA7-65C0-4237-A565-6FEECEF55F74}.Debug|x86.Build.0 = Debug|Win32
-		{5F454CA7-65C0-4237-A565-6FEECEF55F74}.Release|x64.ActiveCfg = Release|x64
-		{5F454CA7-65C0-4237-A565-6FEECEF55F74}.Release|x64.Build.0 = Release|x64
-		{5F454CA7-65C0-4237-A565-6FEECEF55F74}.Release|x86.ActiveCfg = Release|Win32
-		{5F454CA7-65C0-4237-A565-6FEECEF55F74}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {37A5E7A8-55FF-4110-A36C-2FD03D3F724B}
-	EndGlobalSection
-EndGlobal
+#include <iostream>
+#include <locale> 
+using namespace std;
+
+int main()
+{
+    //                           задание 1 обменник шейкелей
+
+  /*  setlocale(LC_ALL, "Russian"); 
+
+    double uah;
+    double usd;
+    double eur;
+    double btc;
+
+    cout << "Введите сумму в гривнах: ";
+    cin >> uah;
+
+    usd = uah / 39.5;
+    eur = uah / 42.2;
+    btc = uah / 2500000;
+
+    cout << "В долларах: " << usd << "\n";
+    cout << "В евро: " << eur << "\n";
+    cout << "В биткойнах: " << btc << "\n";
+
+    return 0;*/
+
+
+
+
+    //                         2  задание мили сухопутные и морские
+
+   //double km, landMile, seaMile;
+   //cout << "введите растояние в километрах земных: ";
+   //cin >> km;
+
+   //landMile = km / 1.609;     // 1 сухопутна миля = 1.609 км
+   //seaMile = km / 1.852;      // 1 морська миля = 1.852 км
+
+   //cout << "сухопутная миля: " << landMile << "\n";
+   //cout << "морськая миля: " << seaMile << "\n";
+
+
+    //                        3 задание обмен значкений a b
+
+    //int a = 5, b = 10, temp;
+    //temp = a;
+    //a = b;
+    //b = temp;
+
+    //cout << "a = " << a << ", b = " << b << "\n";
+
+
+
+
+
+    //                             4 задание (Обмен средних цифр в трехзначных числах)
+
+        //int num1, num2;
+        //cout << "введите первое трёхзначное число : ";
+        //cin >> num1;
+        //cout << "введите второе трёхзначное число: ";
+        //cin >> num2;
+
+        //int a1 = num1 / 100;
+        //int b1 = (num1 / 10) % 10;
+        //int c1 = num1 % 10;
+
+        //int a2 = num2 / 100;
+        //int b2 = (num2 / 10) % 10;
+        //int c2 = num2 % 10;
+
+        //// заменяем средние числа
+        //int new1 = a1 * 100 + b2 * 10 + c1;
+        //int new2 = a2 * 100 + b1 * 10 + c2;
+
+        //cout << "Результат: " << new1 << " та " << new2 << "\n";
+
+
+
+    //                 5 задание (Сумма перво и третьей ][ разница второй и четвёртой)
+
+    /*int num;
+    cout << "Введіть чотиризначне число: ";
+    cin >> num;
+
+    int d1 = num / 1000;
+    int d2 = (num / 100) % 10;
+    int d3 = (num / 10) % 10;
+    int d4 = num % 10;
+
+    int sum = d1 + d3;
+    int diff = d2 - d4;
+
+    cout << "Сумма перво и третьей цыфры  : " << sum << "\n";
+    cout << "разница второй и четвёртой  : " << diff << "\n";*/
+
+
+    //                       6 задани е даление 2й цыфры из 3х значного числа
+
+    //int num;
+    //cout << "введите трёхзначное число: ";
+    //cin >> num;
+
+    //int d1 = num / 100;
+    //int d3 = num % 10;
+
+    //int result = d1 * 10 + d3;
+    //cout << "число без средней цыфры: " << result << "\n";
+
+//                           7 задание годовой процент вкладу
+
+//double deposit, yearPercent;
+//cout << "Введіть суму вкладу (грн): ";
+//cin >> deposit;
+//cout << "Введіть річний відсоток: ";
+//cin >> yearPercent;
+//
+//double monthlyPayment = (deposit * yearPercent / 100) / 12;
+//cout << "Щомісячна виплата: " << monthlyPayment << " грн" <<"\n";
+
+//                           8 задание funt=>kg and kg=>funt
+
+//double funt, kg;
+//const double gramInPound = 405.9;
+//
+//cout << "вес в фунтах: ";
+//cin >> funt;
+//kg = (funt * gramInPound) / 1000;
+//cout << "это " << kg << " кг" <<"\n";
+//
+//cout << "\nвес в кг: ";
+//cin >> kg;
+//funt = (kg * 1000) / gramInPound;
+//cout << "это " << funt << " фунтов" <<"\n";
+
+//                             9 переворот трёхзначного числа
+
+//int num;
+//cout << "введите трёхзначное число : ";
+//cin >> num;
+//
+//int d1 = num / 100;
+//int d2 = (num / 10) % 10;
+//int d3 = num % 10;
+//
+//int reversed = d3 * 100 + d2 * 10 + d1;
+//cout << "перевёрнутое число : " << reversed <<"\n";
+
+
+}
